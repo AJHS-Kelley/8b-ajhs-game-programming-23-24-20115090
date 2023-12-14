@@ -1,7 +1,5 @@
 # Hangman game by Jordan Henry , v0.0
-# CRT:  You have at least one error preventing your code from executing.  Please see my comments
-# and fix the code ASAP. 
-import = random # remove the = sign on this line. 
+import = random
 words = 'cat dog hat pat rat saw sad bed tab pet school uniform microsoft program operate function collection instructions license hangman ironic nauseous coincidental phenomenom onomatopoeia necessary appealing seperate platonic electrons'.split()
 
 # VARIABLE_NAMES in all CAPS ARE CONSTANTS AND NOT MEANT TO CHANGE!
@@ -122,13 +120,13 @@ while True:
             gameIsDone = True 
 
     if gameIsDone:
-        if playAgain():
+        if playAgain();
         missedLetters = ''
         correctLetters = ''
         gameIsDone = False 
         secretWord = getRandomWord(words)
     else:
-        break
+        break 
 
 
 
