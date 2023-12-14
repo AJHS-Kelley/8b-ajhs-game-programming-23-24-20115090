@@ -5,6 +5,8 @@ class Person: # Use PascalCase for ClassNames
         self.name = name
         self.age = age
         self.weight = weight 
+        self.weakness = None
+        self.nemesis = none
 
 # To string function -- How the object appears as a string 
     def __str__(self):
@@ -36,3 +38,24 @@ elif person1.age == person2.age:
     print("Each person is the same age.\n")
 else: 
     print(f"{person2.age} is older than{person1.age}")
+
+ person1.classFunction() 
+
+# Changing properties after creation
+print(person1.name)
+person1.name = "William Butcher"
+print(person1.name)
+
+# Deleting Properties -- DANGER WILL ROBINSON, DANGER!
+# THIS DOES NOT'RESET' A PROOPERTY, IT DELETES IT COMPLETELY
+print(person1.name)
+del person1.name
+# print(person1)
+
+# Deleting Objects -- Delete them if you think your finished with them
+del person1
+
+# Adding Properties to Objects -- USE CAREFULLY 
+person2.weakness = "cryptonite"
+print(person2)
+print(person2.weakness)
